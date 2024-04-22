@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="witdh=device-width, initial-scale=1.0">
+        <title>AICS Entrance Exam-Register and Login Form</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/8d109b431d.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div class="container">
+            <div class="form-box">
+                <h1 id="title">Register</h1>
+                <form action="register.php" method="post">
+   
+                        <div class="input-field">
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" name="fullname" placeholder="Full Name" id="fullname" required>
+                        </div>
+
+                        <div class="input-field">
+                            <i class="fa-solid fa-venus-mars"></i>
+                            <input type="text" name="gender" placeholder="Gender" id="gender" required>
+                        </div>
+
+                        <div class="input-field">
+                            <i class="fa-solid fa-cake-candles"></i>
+                            <input type="text" name="birthdate" placeholder="Birthdate" id="birthdate" required>
+                        </div>
+
+                        <div class="input-field">
+                            <i class="fa-solid fa-building-user"></i>
+                            <input type="text" name="section" placeholder="Section" id="section" required>
+                        </div>
+
+                        <div class="input-field">
+                            <i class="fa-regular fa-user"></i>
+                            <input type="text" name="username" placeholder="Username" id="username" required>
+                        </div>
+
+                        <div class="input-field">
+                            <i class="fa-solid fa-key"></i>
+                            <input type="text" name="password" placeholder="Password" id="password" required>
+                        </div>
+                    
+                        <button type="submit" class="btn" value="Save">Register</button>
+            </div>
+        </div>
+
+<!--<script>
+
+let registerBtn = document.getElementById("registerBtn");
+let loginBtn = document.getElementById("loginBtn");
+let nameField = document.getElementById("nameField");
+let genderField = document.getElementById("genderField");
+let sectionField = document.getElementById("sectionField");
+let birthdateField = document.getElementById("birthdateField");
+let title = document.getElementById("title");
+
+loginBtn.onclick = function(){
+    nameField.style.maxHeight = "0";
+    genderField.style.maxHeight = "0";
+    sectionField.style.maxHeight = "0";
+    birthdateField.style.maxHeight = "0";
+    title.innerHTML = "Login";
+   
+    loginBtn.classList.remove("disable");
+    registerBtn.classList.add("disable");
+    document.open(register.php);
+}
+
+registerBtn.onclick = function(){
+    nameField.style.maxHeight = "60px";
+    genderField.style.maxHeight = "60px";
+    sectionField.style.maxHeight = "60px";
+    birthdateField.style.maxHeight = "60px";
+    title.innerHTML = "Register";
+    loginBtn.classList.add("disable");
+    registerBtn.classList.remove("disable");
+}
+
+</script>-->
+<script src="script.js"></script>
+
+    </body>
+</html>
